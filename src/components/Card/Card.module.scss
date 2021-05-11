@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss'; 
+
+.container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding-bottom: 30px;
+}
+
+.image {
+  width: 100%;
+}
+
+.infoContainer {
+  height: 100%;
+  padding: 20px;
+  color: $white;
+  background-color: $dark-purple2;
+}
+
+.subHeading {
+  color: $green;
+  margin-bottom: 0px;
+}
+
+.heading {
+  color: $light-green;
+}
+
+.viewEpisodes {
+  cursor: pointer;
+  right: 15px;
+
+  &::after {
+    content: '>';
+    margin-left: 5px;
+  }
+}
+
+
+.back {
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  margin-top: 20px;
+  
+  &::before {
+    content: '<';
+    margin-right: 5px;
+  }
+}
+
+.buttonLink {
+  color: $white;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+
+  &:hover {
+    color: $light-green2;
+    cursor: pointer;
+  }
+}

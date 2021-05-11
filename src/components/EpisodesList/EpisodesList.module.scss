@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.container {
+  background: $dark-purple1;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.list {
+  height: 225px;
+  overflow-y: scroll;
+  counter-reset: bullet-counter;
+}
+
+.episode {
+  color: $white;
+  margin-bottom: 12px;
+}
+
+.airDate {
+  color: $light-green2;
+  font-size: 14px;
+  font-style: italic;
+
+  &::before {
+    counter-increment: bullet-counter;
+    content: counter(bullet-counter) '.';
+    color: $light-green;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}

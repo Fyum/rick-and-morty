@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss'; 
+
+.subHeading {
+  color: $green;
+  margin-bottom: 0px;
+}
+
+.buttonLink {
+  color: $white;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+
+  &:hover {
+    color: $light-green2;
+    cursor: pointer;
+  }
+}

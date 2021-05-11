@@ -1,0 +1,40 @@
+@import './styles/variables.scss';
+
+.container {
+  background-color: $dark-purple1;
+  padding: 30px;
+}
+
+.heading {
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: $light-green;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: auto;
+  
+  @media (max-width: 1260px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.buttonArea {
+  margin: 50px 0;
+  text-align: center;
+}
