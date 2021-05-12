@@ -47,17 +47,17 @@ const Profile = (props: Props) => {
       </div>
 
       <h4 className={styles.subHeading}>Location</h4>
-      <button className={styles.buttonLink} onClick={onLocationClick}>
+      <button data-testid='location' className={styles.buttonLink} onClick={onLocationClick}>
         {location.name}
       </button>
 
       <h4 className={styles.subHeading}>Origin</h4>
-      <button className={styles.buttonLink} onClick={onOriginClick}>
+      <button data-testid='origin' className={styles.buttonLink} onClick={onOriginClick}>
         {origin.name}
       </button>
 
       <h4 className={styles.subHeading}>Appeared in</h4>
-      <button className={styles.buttonLink} onClick={onEpisodeClick}>
+      <button data-testid='episode' className={styles.buttonLink} onClick={onEpisodeClick}>
         {episode?.length} episodes
       </button>
     </div>

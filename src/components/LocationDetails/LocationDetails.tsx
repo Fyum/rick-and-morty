@@ -1,9 +1,10 @@
 import styles from './LocationDetails.module.scss'
 import useFetch from '../../hooks/useFetch'
 import { getLocationById } from '../../network/api'
+import { IdType } from '../../types'
 
 interface Props {
-  locationId: number
+  locationId?: IdType
 }
 
 const LocationDetails = (props: Props) => {

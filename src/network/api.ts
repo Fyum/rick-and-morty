@@ -25,7 +25,7 @@ export const getEpisodes = async (
   return fetch(url).then((res) => res.json())
 }
 
-export const getEpisodeById = async (ids: Array<IdType> | IdType) => {
+export const getEpisodeById = async (ids?: Array<IdType> | IdType) => {
   const url = buildUrl('/episode', undefined, ids)
   return fetch(url).then((res) => res.json())
 }
@@ -38,7 +38,7 @@ export const getLocations = async (
 }
 
 export const getLocationById = async (
-  ids: Array<IdType> | IdType,
+  ids?: Array<IdType> | IdType,
 ): Promise<Location | undefined> => {
   const url = buildUrl('/location', undefined, ids)
   return fetch(url).then((res) => res.json())
